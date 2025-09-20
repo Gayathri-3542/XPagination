@@ -64,15 +64,12 @@ function Xpagination() {
         </tbody>
       </table>
 
-      <div className="pagination">
-  <button onClick={handlePrevious} disabled={currentPage === 1}>
-    Previous
-  </button>
-  <span>{currentPage}</span>
-  <button onClick={handleNext} disabled={currentPage === totalPages}>
-    Next
-  </button>
+     <div className="pagination">
+  <button onClick={handlePrevious} disabled={currentPage === 1}>Previous</button>
+  <span>Page {currentPage} of {totalPages}</span>
+  <button onClick={handleNext} disabled={currentPage === totalPages}>Next</button>
 </div>
+
 
     </div>
   );
