@@ -66,7 +66,7 @@ function Xpagination() {
 
      <div className="pagination">
   <button onClick={handlePrevious} disabled={currentPage === 1}>Previous</button>
-  <span>Page {currentPage} of {totalPages}</span>
+  <span>{currentPage}</span>
   <button onClick={handleNext} disabled={currentPage === totalPages}>Next</button>
 </div>
 
